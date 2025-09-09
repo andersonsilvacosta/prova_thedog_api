@@ -1,0 +1,13 @@
+    
+header {
+   background-color: rgb(34, 41, 3);
+   color: white;
+   padding: 2em;
+   display: flexbox;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   border-radius: 8px;
+   padding: 6px 850px;
+}
+
