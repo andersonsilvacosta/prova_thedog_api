@@ -1,14 +1,17 @@
-import api from "./api"
-
+import api from './api';
 
 export const getcharacters = async () => {
-    const response = await api.get('/characters')
+  try {
+    const response = await api.get('/breeds');
 
-    if(response.status !==200){
-        return []
+    if (response.status !== 200) {
+      return [];
     }
 
-    console.log('response do AXIOS', response)
-
-    return response.data.results
-}
+    console.log('response do AXIOS', response);
+    return response.data;
+  } catch (error) {
+    console.error('Erro ao buscar personagens:', error);
+    return [];
+  }
+};
