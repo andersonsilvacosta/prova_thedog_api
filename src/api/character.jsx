@@ -1,6 +1,6 @@
-import api from './api';
+import api from "./api.jsx";
 
-export const getcharacters = async () => {
+export const getcharacters = async () => { // 'c' minúsculo
   try {
     const response = await api.get('/breeds');
 
